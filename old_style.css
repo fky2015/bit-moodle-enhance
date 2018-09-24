@@ -1,0 +1,573 @@
+@-moz-document regexp("http[s]?://online\\.bit\\.edu\\.cn/moodle.*") {
+/* 提交历史 */
+.path-mod-programming #codeview {
+    background-color: #282828;
+}
+.dp-highlighter {
+	background-color: #282828;
+}
+.dp-highlighter .tools {
+	background-color: #282828;
+	border-left: 3px solid #585858;
+}
+.dp-highlighter ol li,
+.dp-highlighter .columns div {
+	font-family: monospace;
+}
+.dp-highlighter ol li.alt {
+	background-color: #383838;
+}
+.dp-highlighter ol li,
+.dp-highlighter .columns div {
+	border-left: 3px solid #585858;
+	background-color: #484848;
+	color: #5C5C5C;
+}
+.dp-highlighter .comment, .dp-highlighter .comments {
+    color: #75715e;
+}
+.dp-highlighter .string {
+    color: #e6db74;
+}
+.dp-highlighter .keyword {
+    color: #f92672;;
+}
+.dp-highlighter .preprocessor {
+    color: #fd971f;;
+    background-color: inherit;
+}
+.dp-highlighter ol li span {
+	color: #f8f8f2;
+}
+
+/* 顶部导航栏 */
+.navbar {
+    background: none repeat scroll 0 0 #282828;
+    padding: 0;
+}
+
+.navbar-inner {
+    background: #282828;
+}
+
+.navbar .brand {
+    background: #383838;
+}
+
+.navbar .dropdown-menu > li > a:hover, .navbar .dropdown-menu>li>a:focus {
+    background-color: #383838;
+}
+
+.navbar .nav>li>a:focus,.navbar .nav>li>a:hover,.navbar .nav>.active>a,.navbar .nav>.active>a:hover,.navbar .nav>.active>a:focus, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    background-color: #383838;
+}
+
+.navbar .dropdown-menu {
+    border-bottom: 4px solid #282828;
+    background-color: #282828;
+}
+
+
+/* 搜索 */
+.navbar #search input {
+    background: #383838;
+}
+.navbar #search input[type="submit"] {
+    background: #383838 url(/moodle/theme/image.php/lambda/theme/1510491239/bg/icon-search) no-repeat center center;
+}
+
+/* 提交页面的那个蓝底的 ">" 符号, 占空间太多了 */
+#submit {
+    position: unset;
+    margin: 0;
+    background: unset;
+    width: unset;
+    height: unset;
+}
+
+#submit:hover,#submit:focus {
+    transition: unset;
+    background: unset;
+}
+
+/* 代码框 */
+.form-item .form-label, .mform .fitem div.fitemtitle, .userprofile dl.list dt, .form-horizontal .control-label {
+    width: 40px;
+}
+.form-item .form-setting, .form-item .form-description, .mform .fitem .felement, #page-mod-forum-search .c1, .mform .fdescription.required, .userprofile dl.list dd, .form-horizontal .controls {
+    margin-left: 50px;
+}
+.ftextarea {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #aeaeae;
+}
+.ftextarea textarea {
+    font-family: monospace;
+    color: #efefef;
+    background: #282828;
+}
+textarea:focus,input[type="text"]:focus,input[type="password"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="time"]:focus,input[type="week"]:focus,input[type="number"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="color"]:focus,.uneditable-input:focus {
+    border-color: unset;
+    outline: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+}
+.tln-active, .tln-wrapper, .tln-line {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    list-style: none;
+}
+.tln-active {
+    display: inline-block;
+    padding: 10px;
+    width: calc(100% - 48px);
+    height: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Roboto Mono", monospace;
+    word-break: break-all;
+    border: 1px solid #aeaeae;
+    background-color: #282828;
+    resize: none;
+    overflow-wrap: normal;
+    overflow-x: auto;
+    white-space: pre;
+}
+.tln-wrapper {
+    width: 48px;
+    padding: 11px 5px 35px;
+    height: 100%;
+    word-break: break-all;
+    overflow: hidden;
+    display: inline-block;
+    counter-reset: line;
+    background: #383838;
+}
+.tln-line {
+    width: 100%;
+    display: block;
+    text-align: right;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #aeaeae;
+}
+.tln-line::before {
+    counter-increment: line;
+    content: counter(line);
+    font-size: 14px;
+    user-select: none;
+}
+
+/* 下方的提交 */
+table#form td.submit,.form-buttons,.path-admin .buttons,#fitem_id_submitbutton,.fp-content-center form+div,div.backup-section+form,#fgroup_id_buttonar {
+    background-color: #181818;
+    border-top: unset;
+}
+
+body {
+    background: #181818;
+    color: #efefef;
+}
+
+/* 折扣时间等 */
+table#explaincaps tbody>tr:nth-child(odd)>td,table#defineroletable tbody>tr:nth-child(odd)>td,table.grading-report tbody>tr:nth-child(odd)>td,table#listdirectories tbody>tr:nth-child(odd)>td,table.rolecaps tbody>tr:nth-child(odd)>td,table.userenrolment tbody>tr:nth-child(odd)>td,table#form tbody>tr:nth-child(odd)>td,form#movecourses table tbody>tr:nth-child(odd)>td,#page-admin-course-index .editcourse tbody>tr:nth-child(odd)>td,.forumheaderlist tbody>tr:nth-child(odd)>td,table.flexible tbody>tr:nth-child(odd)>td,.generaltable tbody>tr:nth-child(odd)>td,table#explaincaps tbody>tr:nth-child(odd)>th,table#defineroletable tbody>tr:nth-child(odd)>th,table.grading-report tbody>tr:nth-child(odd)>th,table#listdirectories tbody>tr:nth-child(odd)>th,table.rolecaps tbody>tr:nth-child(odd)>th,table.userenrolment tbody>tr:nth-child(odd)>th,table#form tbody>tr:nth-child(odd)>th,form#movecourses table tbody>tr:nth-child(odd)>th,#page-admin-course-index .editcourse tbody>tr:nth-child(odd)>th,.forumheaderlist tbody>tr:nth-child(odd)>th,table.flexible tbody>tr:nth-child(odd)>th,.generaltable tbody>tr:nth-child(odd)>th {
+    background-color: unset;
+}
+
+/* 前面那项激活时的颜色 */
+.user-enroller-panel .uep-search-results .users tbody tr:hover>td,.user-enroller-panel .uep-search-results .cohorts tbody tr:hover>td,table.grading-report tbody tr:hover>td,.forumheaderlist tbody tr:hover>td,.generaltable tbody tr:hover>td,table.flexible tbody tr:hover>td,.category_subcategories tbody tr:hover>td,table#modules tbody tr:hover>td,table#permissions tbody tr:hover>td,.user-enroller-panel .uep-search-results .users tbody tr:hover>th,.user-enroller-panel .uep-search-results .cohorts tbody tr:hover>th,table.grading-report tbody tr:hover>th,.forumheaderlist tbody tr:hover>th,.generaltable tbody tr:hover>th,table.flexible tbody tr:hover>th,.category_subcategories tbody tr:hover>th,table#modules tbody tr:hover>th,table#permissions tbody tr:hover>th {
+    background-color: unset;
+}
+
+/* 测试输入输出的颜色 */
+.path-mod-programming td.programming-io span {
+    background-color: #383838;
+}
+
+/* 段落标题 */
+h1, h2, h3, h4, h5, h6, .back-to-top, .socials p, #socialheading, .forumpost .subject {
+    color: #efefef;
+}
+
+/* dock 模式的两侧框框 */
+#dockeditempanel .dockeditempanel_content {
+    background-color: #282828;
+    border: 1px solid #383838;
+    -webkit-box-shadow: 2px 4px 4px 2px #383838;
+    -moz-box-shadow: 2px 4px 4px 2px #383838;
+    box-shadow: 2px 4px 4px 2px #383838;
+}
+
+#dock .dockedtitle {
+    background-color: #282828;
+    background-image: unset;
+}
+
+#dock .dockedtitle:hover,#dock .dockedtitle:focus,#dock .dockedtitle:active,#dock .dockedtitle.active,#dock .dockedtitle.disabled,#dock .dockedtitle[disabled] {
+    background-color: #383838;
+}
+
+/* 两侧的框框 */
+.block {
+    background: #282828;
+}
+
+/* 两侧的框框和首页其他地方的文字 */
+.block ul.block_tree a, .breadcrumb a,.instancename {
+    color: #efefef;
+}
+
+/* 首页题目等分隔线 */
+.course-content ul li.section.main {
+    background: unset;
+    padding: 10px 0 !important;
+    border-bottom: 2px solid #282828;
+}
+
+.block .header .title {
+    padding-left: 0px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #383838;
+    background: unset;
+}
+
+#site-news-forum,#frontpage-course-list,#frontpage-category-combo,#frontpage-category-names {
+    background: unset;
+    border-bottom: 4px solid #383838;
+}
+
+/* 排名 */
+table.flexible th,.generaltable th,table.flexible td,.generaltable td {
+    border-top: 1px solid #383838
+}
+
+
+/* 题目页面导航栏 */
+.nav-tabs {
+    background: #282828;
+    border-top: 2px solid #282828;
+    border-left: 1px solid #282828;
+    border-right: 1px solid #282828;
+}
+
+.nav-tabs>li>a {
+    border: medium none;
+    background-color:#282828;
+    color: #efefef;
+}
+
+.nav>.disabled>a {
+    color: #efefef;
+    background: #555555;
+}
+
+/* 激活时 */
+.nav-tabs>li>a:hover {
+    background-color: #555555;
+}
+
+.nav-tabs>li.active {
+    border-bottom: 1px solid #555555;
+    border-top:2px solid #555555;
+    margin-bottom: -1px;
+    margin-top: -2px;
+}
+
+.nav-tabs>.active>a,.nav-tabs>.active>a:hover,.nav-tabs>.active>a:focus {
+    background-color: #555555;
+    color: #efefef;
+    cursor: default;
+    border-radius: 0;
+    border: medium none;
+}
+
+/* 首页每次练习的名称 */
+.content h3.sectionname {
+    background: #282828;
+    color: #efefef;
+    border-color: #282828 #282828 #282828 #282828;
+}
+
+/* 帖子背景色 */
+.forumpost {
+    background: #383838;
+}
+
+/* 运行结果 */
+.path-mod-programming #test-result-detail .passed,
+.path-mod-programming #test-result-detail .passed .cell {
+    background-color: #282828;
+    color: #A0EEA0; /* light green */
+}
+.path-mod-programming #test-result-detail .notpassed,
+.path-mod-programming #test-result-detail .notpassed .cell {
+    background-color: #282828;
+    color: #F0A0A0; /* light red */
+}
+
+/* 页脚 */
+/* 隐藏算了, 太占地方 */
+#page-footer {
+    display: none;
+}
+
+.footerlinks, #page-footer {
+    background: #282828;
+    border-top: 3px solid #282828;
+}
+
+/* 课程 */
+.courses .coursebox.even, .courses .coursebox.odd {
+    background-color: #282828;
+}
+
+.coursebox {
+    border: 1px solid #383838;
+    border-radius: 0;
+    border-left: 2px solid #383838;
+}
+
+.coursebox > .info > .coursename a, .coursebox > .info > .name a {
+    background-image: none;
+    padding: 0;
+    color: #efefef;
+}
+
+
+/* 一堆图标 */
+.block .header .title h2:before {
+    background-color: #484848; 
+    color: #438eb9;
+    content: "\f069";
+}
+
+.block_html .header .title h2:before {
+    background-color: #484848; 
+    color: #8EC63F;
+    content: "\f05a"
+}
+
+.block_news_items .header .title h2:before {
+    background-color: #484848; 
+    color: #29A294;
+    content: "\f0a1"
+}
+
+.block_navigation .header .title h2:before {
+    background-color: #484848; 
+    color: #EB3D00;
+    content: "\f0e8"
+}
+
+.block_calendar_upcoming .header .title h2:before, .block_calendar_month .header .title h2:before {
+    background-color: #484848; 
+    color: #008ecd;
+    content: "\f073"
+}
+
+.block_course_list .header .title h2:before {
+    background-color: #484848; 
+    color: #ffce00;
+    content: "\f108"
+}
+
+.block_completionstatus .header .title h2:before, .block_selfcompletion .header .title h2:before {
+    background-color: #484848; 
+    color: #76b900;
+    content: "\f0e4"
+}
+
+.block_rss_client .header .title h2:before {
+    background-color: #484848; 
+    color: #008ecd;
+    content: "\f09e"
+}
+
+.block_rss_plus .header .title h2:before {
+    background-color: #484848; 
+    color: #ff9500;
+    content: "\f09e"
+}
+
+.block_blog_menu .header .title h2:before {
+    background-color: #484848; 
+    color: #ff9500;
+    content: "\f02d"
+}
+
+.block_quiz_results .header .title h2:before {
+    background-color: #484848; 
+    color: #008ecd;
+    content: "\f080"
+}
+
+.block_quiz_navblock .header .title h2:before {
+    background-color: #484848; 
+    color: #76b900;
+    content: "\f126"
+}
+
+.block_glossary_random .header .title h2:before {
+    background-color: #484848; 
+    color: #008ecd;
+    content: "\f0eb"
+}
+
+.block_book_toc .header .title h2:before {
+    background-color: #484848; 
+    color: #76B900;
+    content: "\f02d"
+}
+
+.block_participants .header .title h2:before, .block_online_users .header .title h2:before {
+    background-color: #484848; 
+    color: #92499e;
+    content: "\f0c0"
+}
+
+.block_section_links .header .title h2:before {
+    background-color: #484848; 
+    color: #EB3D00;
+    content: "\f02e"
+}
+
+.block_activity_modules .header .title h2:before {
+    background-color: #484848; 
+    color: #EB3D00;
+    content: "\f12e"
+}
+
+.block_comments .header .title h2:before {
+    background-color: #484848; 
+    color: #ffce00;
+    content: "\f075"
+}
+
+.block_settings .header .title h2:before, .block_admin_bookmarks .header .title h2:before {
+    background-color: #484848; 
+    color: #BD1A8D;
+    content: "\f085"
+}
+
+.block_blog_tags .header .title h2:before, .block_tags .header .title h2:before {
+    background-color: #484848; 
+    color: #ff9f00;
+    content: "\f02c"
+}
+
+.block_private_files .header .title h2:before {
+    background-color: #484848; 
+    color: #38B9EC;
+    content: "\f114"
+}
+
+.block_block_mentees .header .title h2:before {
+    background-color: #484848; 
+    color: #76B900;
+    content: "\f0c0"
+}
+
+.block_messages .header .title h2:before {
+    background-color: #484848; 
+    color: #ffce00;
+    content: "\f0e0"
+}
+
+.block_community .header .title h2:before {
+    background-color: #484848; 
+    color: #ffce00;
+    content: "\f0ac"
+}
+
+.block_login .header .title h2:before {
+    background-color: #484848; 
+    color: #ffce00;
+    content: "\f007"
+}
+
+.block_recent_activity .header .title h2:before {
+    background-color: #484848; 
+    color: #38B9EC;
+    content: "\f017"
+}
+
+.block_search_forums .header .title h2:before {
+    background-color: #484848; 
+    color: #ffce00;
+    content: "\f0e6"
+}
+
+.block_myprofile .header .title h2:before {
+    background-color: #484848; 
+    color: #EB3D00;
+    content: "\f007"
+}
+
+.block_adminblock .header .title h2:before {
+    background-color: #484848; 
+    color: #76B900;
+    content: "\f0fe"
+}
+
+.block_feedback .header .title h2:before {
+    background-color: #484848; 
+    color: #ffce00;
+    content: "\f087"
+}
+
+.block_flickr .header .title h2:before {
+    background-color: #484848; 
+    color: #ff3096;
+    content: "\f03e"
+}
+
+.block_youtube .header .title h2:before {
+    background-color: #484848; 
+    color: #EB3D00;
+    content: "\f145"
+}
+
+.block_course_badges .header .title h2:before {
+    background-color: #484848; 
+    color: #29a294;
+    content: "\f091"
+}
+
+.block_twitter_search .header .title h2:before {
+    background-color: #484848; 
+    color: #008ecd;
+    content: "\f099"
+}
+
+.block_heritage .header .title h2:before {
+    background-color: #484848; 
+    color: #3e647e;
+    content: "\f02d"
+}
+
+.block_graph_stats .header .title h2:before {
+    background-color: #484848; 
+    color: #38B9EC;
+    content: "\f012"
+}
+
+.block_wikipedia .header .title h2:before {
+    background-color: #484848; 
+    color: #29A294;
+    content: "\f002"
+}
+
+.block_site_main_menu .header .title h2:before {
+    background-color: #484848; 
+    color: #438eb9;
+    content: "\f14e"
+}
+
+
+} 
